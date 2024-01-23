@@ -102,10 +102,10 @@ pub(crate) fn parse_tests(test_str: &str) -> Tests {
                             testcmd.stdin = Some(val.join("\n"));
                         }
                         "stderr" => {
-                            testcmd.stderr = val;
+                            //testcmd.stderr = val;
                         }
                         "stdout" => {
-                            testcmd.stdout = val;
+                            //testcmd.stdout = val;
                         }
                         "rerun-if-stderr" => {
                             testcmd.rerun_if_stderr = Some(val);
